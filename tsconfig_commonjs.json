@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": [
+      "ES5",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "declarationDir": "./types",
+    "outDir": "./lib",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
