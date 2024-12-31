@@ -3,7 +3,7 @@ import { ApipilotRequest } from "../utils/axios";
 /**
  * 获取电台详情
  * 
- * 
+ * 获取电台详情描述
  * 
  * @param {Object} params   
  * @property {String} [params.pk=99406937]  
@@ -53,12 +53,16 @@ export function getRadioDetail(params?: {
 }) {
   return new Promise(async (resolve) => {
     const apipilotRequest: ApipilotRequest = ApipilotRequest.getInstance();
-    const newParams = {...(params?.data || {})};
-      newParams["pk"] = "99406937";
+    const defaultParams: any = {};
+		defaultParams["pk"] = "99406937";
 
-    const newHeaders = {...(params?.headers || {})};
-      newHeaders["Content-Type"] = "application/json";
+    const newParams = {...defaultParams, ...(params?.data || {})};
+    
+    const defaultHeaders: any = {};
+		defaultHeaders["Content-Type"] = "application/json";
 
+    const newHeaders = {...defaultHeaders, ...(params?.headers || {})};
+    
     await apipilotRequest
       .get("https://fm.xinli001.com/broadcast", newParams, {
         headers: newHeaders,
