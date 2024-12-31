@@ -14,14 +14,14 @@
 </template>
 
 <script setup lang="ts">
-import { getRadioDetail } from '../../src/fm/getRadioDetail'
-// import { getRadioDetail } from 'apipilotdemo/fm/getRadioDetail'
+// import { getRadioDetail } from '../../src/fm/getRadioDetail'
+import { getRadioDetail } from 'apipilotdemo/fm/getRadioDetail'
 import { onMounted } from 'vue';
 
 onMounted(async () => {
   const res = await getRadioDetail({
     data: {
-      pk: '1'
+      pk: '2'
     }
   })
   console.log('>>>>', res)
