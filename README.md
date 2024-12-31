@@ -11,33 +11,23 @@ The world is quiet here, with whispers of starlight woven through the sky, and t
 ### 2. Usage
 
 ```javascript
-import { getRadioDetail } from "apipilotdemo";
+import { APIPILOT_FUNCTION_NAME } from "apipilotdemo";
 
-getRadioDetail({
-  data: {
-  pk: '99406937';
-},
-  headers: {
-  'Content-Type': 'application/json';
-},
+APIPILOT_FUNCTION_NAME({
+  APIPILOT_FUNCTION_ARGUMENTS,
 });
 ```
 
 > Recommended Usage
 
 ```javascript
-import { getRadioDetail } from "apipilotdemo/test";
+import { APIPILOT_FUNCTION_NAME } from "apipilotdemo/APIPILOT_DOMAIN_NAME";
 
 // OR
 
-import { getRadioDetail } from "apipilotdemo/test/getRadioDetail";
+import { APIPILOT_FUNCTION_NAME } from "apipilotdemo/APIPILOT_DOMAIN_NAME/APIPILOT_FUNCTION_NAME";
 
-getRadioDetail({
-  data: {
-  pk: '99406937';
-},
-  headers: {
-  'Content-Type': 'application/json';
-},
+APIPILOT_FUNCTION_NAME({
+  APIPILOT_FUNCTION_ARGUMENTS,
 });
 ```
