@@ -1,2 +1,0 @@
-
-export { getTestRadioDetail } from "./getTestRadioDetail"

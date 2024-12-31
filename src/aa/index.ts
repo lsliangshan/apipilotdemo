@@ -1,2 +1,0 @@
-
-export { aaa } from "./aaa"

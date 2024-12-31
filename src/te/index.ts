@@ -1,2 +1,0 @@
-
-export { sdf } from "./sdf"

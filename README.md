@@ -11,31 +11,25 @@ The world is quiet here, with whispers of starlight woven through the sky, and t
 ### 2. Usage
 
 ```javascript
-import { asdf } from "apipilotdemo";
+import { APIPILOT_FUNCTION_NAME } from "apipilotdemo";
 
-asdf({
-  data: {
-  pk: '99406937';
-},
-  headers: {
-},
+APIPILOT_FUNCTION_NAME({
+  data: APIPILOT_FUNCTION_ARGUMENTS,
+  headers: APIPILOT_FUNCTION_HEADERS,
 });
 ```
 
 > Recommended Usage
 
 ```javascript
-import { asdf } from "apipilotdemo/fd";
+import { APIPILOT_FUNCTION_NAME } from "apipilotdemo/APIPILOT_DOMAIN_NAME";
 
 // OR
 
-import { asdf } from "apipilotdemo/fd/asdf";
+import { APIPILOT_FUNCTION_NAME } from "apipilotdemo/APIPILOT_DOMAIN_NAME/APIPILOT_FUNCTION_NAME";
 
-asdf({
-  data: {
-  pk: '99406937';
-},
-  headers: {
-},
+APIPILOT_FUNCTION_NAME({
+  data: APIPILOT_FUNCTION_ARGUMENTS,
+  headers: APIPILOT_FUNCTION_HEADERS,
 });
 ```
