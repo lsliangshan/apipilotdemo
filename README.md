@@ -11,14 +11,13 @@ The world is quiet here, with whispers of starlight woven through the sky, and t
 ### 2. Usage
 
 ```javascript
-import { getRadioDetail } from "apipilotdemo";
+import { getTestRadioDetail } from "apipilotdemo";
 
-getRadioDetail({
+getTestRadioDetail({
   data: {
   pk: '99406937';
 },
   headers: {
-  'Content-Type': 'application/json';
 },
 });
 ```
@@ -26,18 +25,17 @@ getRadioDetail({
 > Recommended Usage
 
 ```javascript
-import { getRadioDetail } from "apipilotdemo/fm";
+import { getTestRadioDetail } from "apipilotdemo/test";
 
 // OR
 
-import { getRadioDetail } from "apipilotdemo/fm/getRadioDetail";
+import { getTestRadioDetail } from "apipilotdemo/test/getTestRadioDetail";
 
-getRadioDetail({
+getTestRadioDetail({
   data: {
   pk: '99406937';
 },
   headers: {
-  'Content-Type': 'application/json';
 },
 });
 ```
