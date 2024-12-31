@@ -45,6 +45,10 @@ export function getRadioDetail(params?: {
    * Request Headers
    */
   headers?: {
+  /**
+   * @property {String=application/json}  
+   */
+  'Content-Type'?: String;
 }
 }) {
   return new Promise(async (resolve) => {
@@ -53,7 +57,8 @@ export function getRadioDetail(params?: {
       newParams["pk"] = "99406937";
 
     const newHeaders = {...(params?.headers || {})};
-    
+      newHeaders["Content-Type"] = "application/json";
+
     await apipilotRequest
       .get("https://fm.xinli001.com/broadcast", newParams, {
         headers: newHeaders,
