@@ -1,37 +1,35 @@
-# apipilotdemo
+# APIPILOT_PROJECT_NAME
 
-## My First Project
+## APIPILOT_PROJECT_LABEL
 
 ### 1. Introduction
 
-The world is quiet here, with whispers of starlight woven through the sky, and the soft hum of the universe reminding us that even in silence, there is a symphony.
+APIPILOT_PROJECT_DESCRIPTION
 
 <br/>
 
 ### 2. Usage
 
 ```javascript
-import { getRadioDetail } from "apipilotdemo";
+import { APIPILOT_FUNCTION_NAME } from "APIPILOT_PROJECT_NAME";
 
-getRadioDetail({
-  {
-  pk: '99406937';
-},
+APIPILOT_FUNCTION_NAME({
+  data: APIPILOT_FUNCTION_ARGUMENTS,
+  headers: APIPILOT_FUNCTION_HEADERS,
 });
 ```
 
 > Recommended Usage
 
 ```javascript
-import { getRadioDetail } from "apipilotdemo/fm";
+import { APIPILOT_FUNCTION_NAME } from "APIPILOT_PROJECT_NAME/APIPILOT_DOMAIN_NAME";
 
 // OR
 
-import { getRadioDetail } from "apipilotdemo/fm/getRadioDetail";
+import { APIPILOT_FUNCTION_NAME } from "APIPILOT_PROJECT_NAME/APIPILOT_DOMAIN_NAME/APIPILOT_FUNCTION_NAME";
 
-getRadioDetail({
-  {
-  pk: '99406937';
-},
+APIPILOT_FUNCTION_NAME({
+  data: APIPILOT_FUNCTION_ARGUMENTS,
+  headers: APIPILOT_FUNCTION_HEADERS,
 });
 ```
