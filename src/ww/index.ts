@@ -1,0 +1,2 @@
+
+export { ass } from "./ass"

@@ -11,9 +11,9 @@ The world is quiet here, with whispers of starlight woven through the sky, and t
 ### 2. Usage
 
 ```javascript
-import { getTestRadioDetail2 } from "apipilotdemo";
+import { asdf } from "apipilotdemo";
 
-getTestRadioDetail2({
+asdf({
   data: {
   pk: '99406937';
 },
@@ -25,13 +25,13 @@ getTestRadioDetail2({
 > Recommended Usage
 
 ```javascript
-import { getTestRadioDetail2 } from "apipilotdemo/test2";
+import { asdf } from "apipilotdemo/fd";
 
 // OR
 
-import { getTestRadioDetail2 } from "apipilotdemo/test2/getTestRadioDetail2";
+import { asdf } from "apipilotdemo/fd/asdf";
 
-getTestRadioDetail2({
+asdf({
   data: {
   pk: '99406937';
 },
